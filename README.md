@@ -33,7 +33,7 @@ $ cd harvey/
 $ python setup.py install
 ```
 
-####Note:
+#### Note:
 
 Windows users might need to install [ansicon](https://github.com/adoxa/ansicon) for colorama to work correctly.
 
