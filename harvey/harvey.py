@@ -89,9 +89,9 @@ def _get_license_description(license_code):
 
     return license
   else:
-    print(Fore.RED + 'No such license. Please check again.'),
+    print(Fore.RED + 'No such license. Please check again.', file = sys.stderr),
     print(Style.RESET_ALL),
-    sys.exit()
+    sys.exit(1)
 
 
 def get_license_summary(license_code):
@@ -135,8 +135,9 @@ def get_license_summary(license_code):
     print('')
 
   except KeyError:
-    print(Fore.RED + 'No such license. Please check again.'),
+    print(Fore.RED + 'No such license. Please check again.', file = sys.stderr),
     print(Style.RESET_ALL),
+    sys.exit(1)
 
 
 def save_license(license_code):
